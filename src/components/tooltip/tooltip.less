@@ -1,0 +1,40 @@
+.tooltip {
+	background: rgba(255, 255, 255, 1);
+	border-radius: 2px;
+	position: absolute;
+	text-align: left;
+	width: 275px;
+	z-index: @z-index-4;
+
+	.tooltip-body {
+		color: @text-grey-light;
+		margin-top: @space-small;
+	}
+
+	.tooltip-container {
+		padding: @space-small;
+	}
+
+	.tooltip-footer {
+		background: @grey-light;
+		margin-top: @space-small;
+		height: 45px;
+	}
+
+	.tooltip-title {
+		color: @text-grey-medium;
+	}
+
+	.next {
+		background: @brand-blue;
+		color: rgba(255, 255, 255, 1);
+		float: right;
+		height: 100%;
+		text-align: center;
+		width: 100px;
+	}
+	.next span {
+		line-height: 46px;
+		vertical-align: middle;
+	}
+}

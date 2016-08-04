@@ -1,0 +1,68 @@
+.drop-shadow(@x: 0, @y: 1px, @blur: 2px, @spread: 0, @alpha: 0.25) {
+	-webkit-box-shadow:	@x @y @blur @spread rgba(0, 0, 0, @alpha);
+	-moz-box-shadow:	@x @y @blur @spread rgba(0, 0, 0, @alpha);
+	box-shadow:			@x @y @blur @spread rgba(0, 0, 0, @alpha);
+}
+
+.box-sizing {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: 	border-box;
+	box-sizing: 		border-box;
+}
+
+.border-radius(@radius) {
+    -webkit-border-radius: 	@radius;
+    -moz-border-radius: 	@radius;
+    border-radius: 			@radius;
+}
+
+.border-radius-custom(@topright: 0, @bottomright: 0, @bottomleft: 0, @topleft: 0) {
+	-webkit-border-top-right-radius:    @topright;
+	-webkit-border-bottom-right-radius: @bottomright;
+	-webkit-border-bottom-left-radius:  @bottomleft;
+	-webkit-border-top-left-radius:     @topleft;
+
+	-moz-border-radius-topright:        @topright;
+	-moz-border-radius-bottomright:     @bottomright;
+	-moz-border-radius-bottomleft:      @bottomleft;
+	-moz-border-radius-topleft:         @topleft;
+
+	border-top-right-radius:            @topright;
+	border-bottom-right-radius:         @bottomright;
+	border-bottom-left-radius:          @bottomleft;
+	border-top-left-radius:             @topleft;
+
+	-moz-background-clip:    padding;
+	-webkit-background-clip: padding-box;
+	background-clip:         padding-box;
+}
+
+.transition(@property, @duration, @style: ease-in-out) {
+	-webkit-transition-property: 		@property;
+	-webkit-transition-duration: 		@duration;
+	-webkit-transition-timing-function: @style;
+
+	-moz-transition-property: 			@property;
+	-moz-transition-duration: 			@duration;
+	-moz-transition-timing-function: 	@style;
+
+	-ms-transition-property: 			@property;
+	-ms-transition-duration: 			@duration;
+	-ms-transition-timing-function: 	@style;
+
+	-o-transition-property: 			@property;
+	-o-transition-duration: 			@duration;
+	-o-transition-timing-function: 		@style;
+
+	transition-property: 				@property;
+	transition-duration: 				@duration;
+	transition-timing-function: 		@style;
+}
+
+.background-blur(@blur) {
+	-webkit-filter: blur(@blur);
+	-moz-filter: blur(@blur);
+	-o-filter: blur(@blur);
+	-ms-filter: blur(@blur);
+	filter: blur(@blur);
+}

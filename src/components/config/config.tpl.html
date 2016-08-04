@@ -1,0 +1,8 @@
+<header class="block-header pn-h5"><span class="fa fa-tag"></span>Tags</header>
+<div class="config-container">
+	<input type="text" class="config-add-input pn-p" placeholder="#addnew" ng-model="newHashtag"/>
+	<input class="btn config-add-btn pn-p" type="button" value="Add new" ng-click="addHashtag(); initStream()">
+	<ul class="config-hashtags">
+		<li class="pn-caption" ng-repeat="hashtag in hashtags">{{hashtag}}</li>
+	</ul>
+</div>

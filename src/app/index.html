@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title ng-bind="pageTitle"></title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- font awesome from BootstrapCDN -->
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+
+    <!-- font from google -->
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,500' rel='stylesheet' type='text/css'>
+
+    <!-- stylesheet -->
+    <link href='style.css' rel='stylesheet' type='text/css'>
+
+    <!-- jquery CDN -->
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+
+    <!-- Bower dependencies -->
+    <script type="text/javascript" src="lib/angular/angular.js"></script>
+    <script type="text/javascript" src="lib/angular-animate/angular-animate.js"></script>
+    <script type="text/javascript" src="lib/angular-resource/angular-resource.js"></script>
+    <script type="text/javascript" src="lib/angular-ui-router/release/angular-ui-router.js"></script>
+    <script type="text/javascript" src="lib/chartjs/Chart.min.js"></script>
+    <script src="https://cdn.socket.io/socket.io-1.2.0.js"></script>
+
+    <!-- Minified app -->
+    <script type="text/javascript" src="app.js"></script>
+
+  </head>
+  <body ng-app="app" ng-controller="AppController">
+    <div class="container-fluid">
+        <div class="row">
+
+          <section id="home" ui-view="home"></section>
+          <section id="content" ui-view="content"></section>
+
+        </div>
+    </div>
+  </body>
+</html>

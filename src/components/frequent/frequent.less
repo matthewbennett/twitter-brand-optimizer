@@ -1,0 +1,55 @@
+.frequent {
+	height: 878px;
+	width: 878px;
+}
+
+.frequent-list {
+	list-style-type: none;
+	height: 100%;
+}
+
+.frequent-list li {
+	float: left;
+	height: 24%;
+	position: relative;
+	width: 25%;
+}
+
+.frequent-background {
+	.background-blur(8px);
+	background-size: cover !important;
+	height: 100%;
+	width: 100%;
+}
+
+.frequent-overlay {
+	background: rgba(0, 0, 0, .2);
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+}
+
+.frequent-keyword {
+	.border-radius(50px);
+	border: 1px solid @white;
+	color: @white;
+	display: inline-block;
+	background: none;
+	text-align: center;
+	height: 30px;
+	padding: 0 @space-medium;
+	margin: auto;
+	font-weight: @fw-semi-bold;
+	position: absolute;
+	top: 0;
+	right: 0;
+	max-width: 80px;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+	left: 0;
+	bottom: 0;
+	line-height: 30px;
+}

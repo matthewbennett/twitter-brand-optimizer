@@ -1,0 +1,18 @@
+<header class="block-header pn-h5"><span class="fa fa-tasks"></span>Retweet Feed</header>
+<div class="feed-container">
+	<ul class="stream-list feed-list">
+		<li ng-repeat="tweet in retweetedTweets">
+			<span class="stream-sentiment"
+				ng-class="getClass(tweet.score)"
+				>{{tweet.score}}</span>
+			<img class="stream-avatar" ng-src="{{tweet.user.image}}" />
+			<div class="stream-info">
+				<span class="pn-p stream-name">{{tweet.user.name}}</span>
+				<p class="pn-body stream-text">{{tweet.text}}</p>
+			</div>
+		</li>
+	</ul>
+	<textarea type="text" maxlength="100" class="feed-input pn-p" placeholder="Post an update! Keep it short and sweet!" ng-model="status"></textarea>
+	<div class="feed-btn-padding"></div>
+	<input class="btn feed-btn pn-p" type="button" value="Post" ng-click="postTweet()">
+</div>

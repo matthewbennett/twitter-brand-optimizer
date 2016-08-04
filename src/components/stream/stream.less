@@ -1,0 +1,103 @@
+stream {
+	.box-sizing;
+	background: @white;
+	border-right: 1px solid @grey-light;
+	height: 100%;
+	position: fixed;
+	left: 0;
+	padding: 0 @space-large @space-large @space-large;
+	width: 400px;
+	z-index: @z-index-2;
+}
+
+.stream-avatar {
+	.border-radius(50px);
+	height: 37px;
+	margin-right: @space-small;
+	width: 37px;
+}
+
+.stream-info, .stream-avatar {
+	display: inline-block;
+	vertical-align: top;
+}
+
+.stream-info {
+	width: 80%;
+}
+
+.stream-list {
+	list-style-type: none;
+	height: 42%;
+	overflow-y: scroll;
+}
+
+.stream-list li {
+	border-bottom: 1px solid @grey-light;
+	padding-bottom: @space-small;
+	padding-top: @space-small;
+	position: relative;
+}
+
+.stream-list li:first-child {
+	padding-top: 0;
+}
+
+.stream-name {
+	color: @text-grey-medium;
+	font-weight: @fw-semi-bold;
+}
+
+.stream-sentiment {
+	.border-radius(40px);
+	color: @white;
+	display: block;
+	font-weight: @fw-semi-bold;
+	font-size: 10px;
+	height: 20px;
+	line-height: 20px;
+	text-align: center;
+	width: 20px;
+	position: absolute;
+	right: 0;
+	vertical-align: middle;
+}
+
+.stream-sentiment-pos0 {
+	background: rgb(52, 152, 219);
+}
+
+.stream-sentiment-pos1 {
+	background: rgb(26, 188, 156);
+}
+
+.stream-sentiment-pos2 {
+	background: rgb(46, 204, 113);
+}
+
+.stream-sentiment-neg0 {
+	background: rgb(241, 196, 15);
+}
+
+.stream-sentiment-neg1 {
+	background: rgb(230, 126, 34);
+}
+
+.stream-sentiment-neg2 {
+	background: rgb(231, 76, 60);
+}
+
+.stream-text {
+	color: @text-grey-light;
+	margin-top: @space-x-small;
+}
+
+.stream-title {
+	color: @text-grey-dark;
+	font-weight: @fw-semi-bold;
+	margin-bottom: @space-large;
+}
+
+.stream-title {
+	margin-top: @space-large;
+}

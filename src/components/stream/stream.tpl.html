@@ -1,0 +1,26 @@
+<h3 class="pn-h3 stream-title">Positive Tweets</h3>
+<ul class="stream-list">
+	<li ng-repeat="tweet in positiveTweets">
+		<span class="stream-sentiment"
+			ng-class="getClass(tweet.score)"
+			>{{tweet.score}}</span>
+		<img class="stream-avatar" ng-src="{{tweet.user.image}}" />
+		<div class="stream-info">
+			<span class="pn-p stream-name">{{tweet.user.name}}</span>
+			<p class="pn-body stream-text">{{tweet.text}}</p>
+		</div>
+	</li>
+</ul>
+<h3 class="pn-h3 stream-title">Negative Tweets</h3>
+<ul class="stream-list">
+	<li ng-repeat="tweet in negativeTweets">
+		<span class="stream-sentiment"
+			ng-class="getClass(tweet.score)"
+			>{{tweet.score}}</span>
+		<img class="stream-avatar" ng-src="{{tweet.user.image}}" />
+		<div class="stream-info">
+			<span class="pn-p stream-name">{{tweet.user.name}}</span>
+			<p class="pn-body stream-text">{{tweet.text}}</p>
+		</div>
+	</li>
+</ul>

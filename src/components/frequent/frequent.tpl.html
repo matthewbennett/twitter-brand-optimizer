@@ -1,0 +1,15 @@
+<header class="block-header pn-h5"><span class="fa fa-tasks"></span>Frequent Keywords</header>
+<ul class="frequent-list">
+	<li ng-repeat="freq in frequent.positive">
+		<div class="frequent-background" ng-style="{ 'background': 'url(' + freq.imgUrl + ')' }"></div>
+		<div class="frequent-overlay">
+			<span class="frequent-keyword pn-p">{{freq.keyword}}</span>
+		</div>
+	</li>
+	<li ng-repeat="freq in frequent.negative">
+		<div class="frequent-background" ng-style="{ 'background': 'url(' + freq.imgUrl + ')' }"></div>
+		<div class="frequent-overlay">
+			<span class="frequent-keyword pn-p">{{freq.keyword}}</span>
+		</div>
+	</li>
+</ul>

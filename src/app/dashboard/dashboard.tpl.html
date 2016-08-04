@@ -1,0 +1,34 @@
+<tooltip
+	info="config.tooltip.info",
+	tooltip-id="config.tooltip.id"
+/>
+<stream
+	positive-tweets="twitter.positiveTweets"
+	negative-tweets="twitter.negativeTweets"
+/>
+<div class="dash-right">
+	<feed class="feed block"
+		retweeted-tweets="twitter.retweetedTweets"
+		status="twitter.status"
+		post-tweet="postTweet()"
+	/>
+</div>
+</feed>
+<div class="dash-right-right">
+	<config class="config block"
+		hashtags="twitter.hashtags"
+		init-stream="initStream()"
+	/>
+	<sentiment class="sentiment block"
+		calculations="twitter.sentimentCalculations"
+	/>
+	<breakdown class="breakdown block"
+		calculations="twitter.sentimentCalculations"
+	/>
+</div>
+<div class="dash-far-right">
+	<frequent class="frequent block"
+		frequent="twitter.frequent"
+	/>
+</div>
+

@@ -1,0 +1,9 @@
+<div class="tooltip shadow-medium" ng-if="tooltipContent">
+	<div class="tooltip-container">
+		<h5 class="pn-h4 tooltip-title">{{tooltipContent.title}}</h5>
+		<p class="pn-p tooltip-body">{{tooltipContent.message}}</p>
+	</div>
+	<div class="tooltip-footer">
+		<div class="pn-p next" ng-click="next()"><span>{{tooltipContent.next}}</span></div>
+	</div>
+</div>

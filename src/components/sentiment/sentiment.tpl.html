@@ -1,0 +1,23 @@
+<header class="block-header pn-h5"><span class="fa fa-tasks"></span>Sentiment Meter</header>
+<h4 class="pn-h1 sentiment-ratio">{{calculations.cleanSentimentRatio}}%</h4>
+<div ang:chartjs:doughnut data-chartjs-model="doughnutCalculations" data-chartjs-width="300"
+	data-chartjs-height="200"
+	data-chartjs-segment-show-stroke="true"
+	data-chartjs-segment-stroke-color="#fff"
+	data-chartjs-segment-stroke-width="2"
+	data-chartjs-percentage-inner-cutout="80"
+	data-chartjs-animation="true"
+	data-chartjs-animation-easing=""
+	data-chartjs-animate-rotate="true"
+	data-chartjs-animate-scale="false">
+</div>
+<div class="sentiment-info">
+	<ul class="sentiment-info-list">
+		<li>
+			<span class="sentiment-key-grey"></span><span class="pn-body sentiment-caption">= Negative</span>
+		</li>
+		<li>
+			<span class="sentiment-key-blue"></span><span class="pn-body sentiment-caption">= Positive</span>
+		</li>
+	</ul>
+</div>

@@ -1,0 +1,59 @@
+.sentiment {
+	position: relative;
+	padding-bottom: @space-large;
+}
+
+.sentiment-doughnut {
+	margin: @space-large auto;
+}
+
+.sentiment canvas {
+	display: block;
+	margin: @space-large auto;
+}
+
+.sentiment-caption {
+	color: @text-grey-light;
+	margin-left: @space-x-small;
+	vertical-align: top;
+}
+
+.sentiment-ratio {
+	color: @text-grey-light;
+	left: 0;
+	right: 0;
+	top: 150px;
+	position: absolute;
+	text-align: center;
+}
+
+.sentiment-info {
+	display: block;
+	float: right;
+	margin-right: @space-large;
+	margin-top: -15px;
+}
+
+.sentiment-info-list {
+	list-style: none;
+}
+
+.sentiment-info-list li {
+	display: inline-block;
+	margin-left: @space-small;
+}
+
+.sentiment-key-grey, .sentiment-key-blue {
+	.border-radius(20px);
+	display: inline-block;
+	height: 17px;
+	width: 17px;
+}
+
+.sentiment-key-grey {
+	background: @grey-light;
+}
+
+.sentiment-key-blue {
+	background: @brand-aqua;
+}
